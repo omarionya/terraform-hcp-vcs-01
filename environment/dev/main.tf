@@ -30,3 +30,6 @@ resource "aws_s3_bucket" "demo" {
     Environment = "dev"
   }
 }
+resource "aws_vpc" "demo" {
+  cidr_block = "10.0.0.0/16"
+}
