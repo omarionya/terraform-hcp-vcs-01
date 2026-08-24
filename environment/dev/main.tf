@@ -13,7 +13,7 @@ terraform {
     organization = "patonya"
 
     workspaces {
-      name = "cloud-infrastructure"
+      name = "terraform-hcp-vcs-01"
     }
   }
 }
@@ -26,7 +26,7 @@ resource "aws_s3_bucket" "demo" {
   bucket_prefix = "hcp-terraform-demo-"
 
   tags = {
-    Name        = "hcp-terraform-demo"
+    Name        = "hcp-terraform-demo-01"
     Environment = "dev"
   }
 }
