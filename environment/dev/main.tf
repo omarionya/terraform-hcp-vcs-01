@@ -30,6 +30,6 @@ resource "aws_s3_bucket" "demo" {
     Environment = "dev"
   }
 }
-resource "aws_vpc" "patonya-vpc" {
+resource "aws_vpc" "pato-vpc" {
   cidr_block = "10.0.0.0/16"
 }
